@@ -329,6 +329,12 @@ extern void PCurveSplit( const std::string & geom_id, const int & pcurveid, cons
 
 //======================== VSPAERO Functions ======================//
 extern void AutoGroupVSPAEROControlSurfaces();
+extern void CreateVSPAEROControlSurfaceGroup();
+extern void AddAllVSPAEROControlSurfaces();
+extern void RemoveAllVSPAEROControlSurfaces();
+extern void SetVSPAEROControlGroupName(const string & name, int CSGroupIndex);
+extern void AddSelectedToCSGroup(vector <int> selected, int CSGroupIndex);
+extern void RemoveSelectedFromCSGroup(vector <int> selected, int CSGroupIndex);
 extern int GetNumControlSurfaceGroups();
 
 //======================== Parasite Drag Tool Functions ======================//

@@ -7,7 +7,7 @@ FIND_PACKAGE(SWIG)
 
 IF( SWIG_FOUND )
 	INCLUDE(${SWIG_USE_FILE})
-	FIND_PACKAGE(PythonLibs)
+	FIND_PACKAGE(PythonLibs 3.5 REQUIRED)
 ENDIF( SWIG_FOUND )
 
 # CMake 3.9 and below used 'LIBXML2_LIBRARIES' as the name of
